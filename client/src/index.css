@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body,
+#root,
+.App{
+  height: 100vh;
+  width: 100%;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.joinRoom{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  background-color: rgba(122, 125, 210, 0.5);
+  padding: 10px;
+}
+
+.userName{
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.roomId{
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.joinBtn{
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  width: 50%;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.chatContainer{
+  display: flex;
+  flex-direction: column;
+  border: 2px black solid;
+  padding: 5px;
+}
+.chatDisplay{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  padding: 5px;
+  overflow-y: scroll;
+}
+
+.message{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  flex-wrap: wrap;
+}
+.message_content{
+  background-color: rgba(0, 128, 0, 0.5);
+  color: white;
+  border-radius: 20px;
+  padding: 1px 15px 1px;
+}
+
+.you .message_content{
+  background-color: rgba(0, 0, 255, 0.5);
+
+}
+
+.other{
+margin-left: 50%;
+}
+
+.message_meta{
+  font-size: .4rem;
+  color: gray;
+  margin-left: 10px;
+  font-weight: 700;
+}
+.user{}
+
+.sendContainer{
+  display: flex;
+}
+.chatMessage{
+  outline: none;
+}
+.sendMessageBtn{
+  background-color: rgba(0, 128, 0, 0.5);
+  color: white;
+  width: 35px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
